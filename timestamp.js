@@ -34,6 +34,8 @@ app.get('/:id', function (req, res) {
 
 });
 
-app.listen(1337, function() {
+var port = process.env.PORT;
+
+app.listen(port, function() {
   console.log('ready on port 1337');
 });
